@@ -4,7 +4,7 @@
 
 # HuaweiPods
 
-**为小米 HyperOS 设备适配 Huawei FreeBuds**
+**让华为耳机接入小米 HyperOS 的系统体验**
 
 [![Platform](https://img.shields.io/badge/Platform-Android-green?style=flat-square&logo=android)](https://android.com)
 [![LSPosed](https://img.shields.io/badge/Framework-LSPosed-blueviolet?style=flat-square)](https://github.com/LSPosed/LSPosed)
@@ -14,9 +14,9 @@
 
 </div>
 
-HuaweiPods 是一个面向小米 HyperOS 的 Xposed 模块，用于把 Huawei FreeBuds 接入系统耳机弹窗、超级岛、融合设备中心和蓝牙详情页。
+HuaweiPods 是一个面向小米 HyperOS 的 Xposed 模块，用于把华为耳机接入系统耳机弹窗、超级岛、融合设备中心和蓝牙详情页。
 
-当前主要围绕 **Huawei FreeBuds 3** 适配：电量显示、主动降噪开关、降噪空间圆盘调节，以及融合设备中心内的耳机显示和流转能力。
+正式版目前支持 **HUAWEI FreeBuds 3** 与 **HUAWEI FreeBuds Pro 3**；其他型号仍在测试中。
 
 ## 交流与反馈
 
@@ -30,14 +30,14 @@ HuaweiPods 是一个面向小米 HyperOS 的 Xposed 模块，用于把 Huawei Fr
 - **降噪圆盘**：支持 FreeBuds 3 的空间降噪方向调节。
 - **系统蓝牙详情页**：在系统设置中显示电量、降噪控制和圆盘调节。
 - **超级岛 / 弹窗**：显示耳机状态，并提供快速降噪控制。
-- **融合设备中心**：显示 FreeBuds，并支持在已配对设备间流转。
+- **融合设备中心**：显示华为耳机，并支持在已配对设备间流转。
 
 ## 正式版系统要求
 
 - 小米 / Redmi 设备，运行 HyperOS。
 - Android 15+。
 - LSPosed API 版本 >= 101。
-- 已配对 Huawei FreeBuds 3。
+- 已配对 HUAWEI FreeBuds 3 或 HUAWEI FreeBuds Pro 3。
 
 ## 正式版使用
 
@@ -49,7 +49,7 @@ HuaweiPods 是一个面向小米 HyperOS 的 Xposed 模块，用于把 Huawei Fr
    - `com.milink.service`
    - `com.xiaomi.bluetooth`
 4. 重启手机，或在应用内重启相关作用域。
-5. 连接 FreeBuds 3 后，在 HuaweiPods、超级岛、融合设备中心或系统蓝牙详情页中控制耳机。
+5. 连接受支持的华为耳机后，在 HuaweiPods、超级岛、融合设备中心或系统蓝牙详情页中控制耳机。
 
 ## Debug 采集版
 

@@ -4,7 +4,7 @@
 
 # HuaweiPods
 
-**Huawei FreeBuds integration for Xiaomi HyperOS devices**
+**Huawei earphone integration for Xiaomi HyperOS devices**
 
 [![Platform](https://img.shields.io/badge/Platform-Android-green?style=flat-square&logo=android)](https://android.com)
 [![LSPosed](https://img.shields.io/badge/Framework-LSPosed-blueviolet?style=flat-square)](https://github.com/LSPosed/LSPosed)
@@ -14,9 +14,9 @@
 
 </div>
 
-HuaweiPods is an Xposed module for Xiaomi HyperOS. It integrates Huawei FreeBuds with the system headset popup, Super Island, Fusion Device Center, and Bluetooth detail page.
+HuaweiPods is an Xposed module for Xiaomi HyperOS. It integrates Huawei earphones with the system headset popup, Super Island, Fusion Device Center, and Bluetooth detail page.
 
-The current adaptation focuses on **Huawei FreeBuds 3**: battery display, ANC on/off, spatial ANC dial control, and headset display / transfer in Fusion Device Center.
+The release build currently supports **HUAWEI FreeBuds 3** and **HUAWEI FreeBuds Pro 3**. Other models remain in testing.
 
 ## Features
 
@@ -32,7 +32,7 @@ The current adaptation focuses on **Huawei FreeBuds 3**: battery display, ANC on
 - Xiaomi / Redmi device running HyperOS.
 - Android 15+.
 - LSPosed API version >= 101.
-- Paired Huawei FreeBuds 3.
+- Paired HUAWEI FreeBuds 3 or HUAWEI FreeBuds Pro 3.
 
 ## Usage
 
@@ -44,7 +44,7 @@ The current adaptation focuses on **Huawei FreeBuds 3**: battery display, ANC on
    - `com.milink.service`
    - `com.xiaomi.bluetooth`
 4. Reboot the phone, or restart the scoped apps from HuaweiPods.
-5. Connect FreeBuds 3 and control it from HuaweiPods, Super Island, Fusion Device Center, or the system Bluetooth detail page.
+5. Connect a supported Huawei headset and control it from HuaweiPods, Super Island, Fusion Device Center, or the system Bluetooth detail page.
 
 ## Development Notes
 

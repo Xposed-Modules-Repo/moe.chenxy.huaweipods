@@ -4,58 +4,73 @@
 
 # HuaweiPods
 
-**Huawei earphone integration for Xiaomi HyperOS devices**
+**Huawei audio device integration for Xiaomi HyperOS**
 
-[![Platform](https://img.shields.io/badge/Platform-Android-green?style=flat-square&logo=android)](https://android.com)
-[![LSPosed](https://img.shields.io/badge/Framework-LSPosed-blueviolet?style=flat-square)](https://github.com/LSPosed/LSPosed)
-[![HyperOS](https://img.shields.io/badge/ROM-HyperOS-orange?style=flat-square)](https://hyperos.mi.com)
+[![Android 15+](https://img.shields.io/badge/Android-15%2B-3DDC84?style=flat-square&logo=android&logoColor=white)](https://www.android.com/)
+[![HyperOS](https://img.shields.io/badge/ROM-HyperOS-FF6900?style=flat-square)](https://hyperos.mi.com/)
+[![LSPosed](https://img.shields.io/badge/Framework-LSPosed-6F42C1?style=flat-square)](https://github.com/LSPosed/LSPosed)
 
-**English** | **[Simplified Chinese](README.md)**
+[Source repository](https://github.com/Nshpiter/HuaweiPods) ·
+[Setup guide](https://github.com/Nshpiter/HuaweiPods/blob/main/docs/guide/getting-started.md) ·
+[Issue tracker](https://github.com/Nshpiter/HuaweiPods/issues) ·
+QQ group `1022359908`
+
+**English** · **[Simplified Chinese](README.md)**
 
 </div>
 
-HuaweiPods is an Xposed module for Xiaomi HyperOS. It integrates Huawei earphones with the system headset popup, Super Island, Fusion Device Center, and Bluetooth detail page.
+HuaweiPods is an Xposed module for Xiaomi and Redmi devices running HyperOS. It integrates supported Huawei audio devices with the system Bluetooth detail page, connection popup, Super Island, and Fusion Device Center.
 
-The release build currently supports **HUAWEI FreeBuds 3** and **HUAWEI FreeBuds Pro 3**. Other models remain in testing.
+## Supported models
+
+All models use the same APK. Model-specific test APKs are no longer distributed.
+
+| Model | Status | Integrated capabilities |
+| --- | --- | --- |
+| HUAWEI FreeBuds 3 | Stable | Battery, ANC on/off, nine-position spatial ANC dial, double-tap gestures, and system UI integration |
+| HUAWEI FreeBuds 5 | Basic support | Battery and ANC/off control |
+| HUAWEI FreeBuds 6i | Extended support | Battery, three-mode control, four ANC levels, voice transparency, double/triple-tap gestures, and dedicated images |
+| HUAWEI FreeBuds Pro 3 | Extended support | Battery, three-mode control and readback, four ANC levels, voice transparency, and gesture settings |
+| HUAWEI FreeBuds Pro 4 | Basic support | Battery and ANC/off control |
+| HUAWEI FreeBuds Pro 5 | Basic support | Battery, three-mode control, and state readback |
+| HUAWEI FreeBuds 7i | Basic support | Battery and ANC/off control |
+| HUAWEI FreeClip | Basic support | Left/right/case battery; no traditional ANC |
+| HUAWEI FreeClip 2 | Extended support | Battery, gestures, spatial audio, and selected wearing/audio settings; no traditional ANC |
+| HUAWEI Eyewear (1st generation) | Basic support | Left/right temple battery and system UI integration; no ANC |
+| HUAWEI Eyewear 2 | Basic support | Left/right temple battery and gesture settings; no ANC |
+
+Models marked Basic or Extended still benefit from real-device regression testing. Official features not listed in the table should not be assumed to work.
 
 ## Features
 
-- **Battery display** for the left earbud, right earbud, and charging case.
-- **ANC control** with noise cancellation and off states.
-- **ANC dial** for FreeBuds 3 spatial noise cancellation adjustment.
-- **System Bluetooth detail page** integration for battery, ANC, and dial controls.
-- **Super Island / popup** status display and quick ANC controls.
-- **Fusion Device Center** headset display and transfer between paired devices.
+- Battery and model-specific controls in the system Bluetooth detail page
+- HyperOS connection popup, Super Island, and Fusion Device Center integration
+- Model-aware ANC, transparency, ANC level, and gesture controls
+- Manual model selection by Bluetooth address for renamed or unrecognized devices
+- In-app update checks and scoped-process restart after an update
 
 ## Requirements
 
-- Xiaomi / Redmi device running HyperOS.
-- Android 15+.
-- LSPosed API version >= 101.
-- Paired HUAWEI FreeBuds 3 or HUAWEI FreeBuds Pro 3.
+- Xiaomi or Redmi device
+- HyperOS based on Android 15 or newer
+- LSPosed API 101 or newer
 
-## Usage
+## Quick start
 
-1. Install the HuaweiPods APK.
-2. Enable the module in LSPosed.
-3. Select the recommended scopes:
-   - `com.android.bluetooth`
-   - `com.android.settings`
-   - `com.milink.service`
-   - `com.xiaomi.bluetooth`
-4. Reboot the phone, or restart the scoped apps from HuaweiPods.
-5. Connect a supported Huawei headset and control it from HuaweiPods, Super Island, Fusion Device Center, or the system Bluetooth detail page.
+1. Install HuaweiPods and enable it in LSPosed.
+2. Select `com.android.bluetooth`, `com.android.settings`, `com.milink.service`, and `com.xiaomi.bluetooth` as scopes.
+3. Restart the scoped processes from HuaweiPods, or reboot the phone.
+4. Connect a supported device and use the integrated features from HuaweiPods or the system UI.
 
-## Development Notes
-
-Internal package names, broadcast actions, configuration names, and the public app identity are unified as HuaweiPods.
+For additional model adaptation or device testing, join QQ group `1022359908`. Reproducible problems can be reported through [GitHub Issues](https://github.com/Nshpiter/HuaweiPods/issues).
 
 ## Credits
 
-- [OppoPods](https://github.com/1812z/OppoPods) by 1812z — the fork HuaweiPods was directly adapted from.
-- [OppoPods](https://github.com/Leaf-lsgtky/OppoPods) by Leaf-lsgtky — the original upstream OppoPods project.
-- [HyperPods](https://github.com/Art-Chen/HyperPods) by Art_Chen — original HyperOS headset integration ideas.
-- [Miuix](https://github.com/YuKongA/miuix) — HyperOS-style Compose UI components.
+- [OppoPods](https://github.com/1812z/OppoPods) by 1812z — the fork HuaweiPods was directly adapted from
+- [OppoPods](https://github.com/Leaf-lsgtky/OppoPods) by Leaf-lsgtky — the original upstream project
+- [HyperPods](https://github.com/Art-Chen/HyperPods) by Art_Chen
+- [HyperIsland](https://github.com/1812z/HyperIsland) by 1812z — interaction reference for update checks and onboarding
+- [Miuix](https://github.com/YuKongA/miuix)
 
 ## License
 

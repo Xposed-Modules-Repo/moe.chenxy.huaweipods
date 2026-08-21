@@ -23,21 +23,24 @@ HuaweiPods is an Xposed module for Xiaomi and Redmi devices running HyperOS. It 
 
 ## Supported models
 
-All models use the same APK. Model-specific test APKs are no longer distributed.
+The unified build supports the 14 models below in one APK. Model-specific test APKs are no longer distributed.
 
 | Model | Status | Integrated capabilities |
 | --- | --- | --- |
 | HUAWEI FreeBuds 3 | Stable | Battery, ANC on/off, nine-position spatial ANC dial, double-tap gestures, and system UI integration |
-| HUAWEI FreeBuds 5 | Basic support | Battery and ANC/off control |
-| HUAWEI FreeBuds 6i | Extended support | Battery, three-mode control, four ANC levels, voice transparency, double/triple-tap gestures, and dedicated images |
-| HUAWEI FreeBuds Pro 3 | Extended support | Battery, three-mode control and readback, four ANC levels, voice transparency, and gesture settings |
-| HUAWEI FreeBuds Pro 4 | Basic support | Battery and ANC/off control |
-| HUAWEI FreeBuds Pro 5 | Basic support | Battery, three-mode control, and state readback |
-| HUAWEI FreeBuds 7i | Basic support | Battery and ANC/off control |
+| HUAWEI FreeBuds 4E | Extended support | Battery, ANC/off with Light/Balanced levels and readback, left/right double-tap and press-and-hold, wear detection, fixed swipe-volume guidance, three official sound presets, and official color images |
+| HUAWEI FreeBuds 5 | Extended support | Battery, ANC/off readback, Smart/Light/Balanced ANC levels, wear detection, four official sound presets, high-quality audio and low-latency auto-apply; gesture settings remain pending |
+| HUAWEI FreeBuds 5i | Extended support | Battery, transparency/ANC/off readback, Smart/Light/Balanced/Deep ANC levels, left/right double-tap, wear detection, four official sound presets, high-quality audio, low-latency auto-apply, and official color images; long-press and swipe settings remain pending |
+| HUAWEI FreeBuds 6i | Extended support | Battery, transparency/ANC/off, four ANC levels, voice transparency, double/triple-tap gestures, four official sound presets, a 10-band custom EQ, low-latency auto-apply, and dedicated images |
+| HUAWEI FreeBuds Pro 3 | Extended support | Battery, three-mode control and readback, four ANC levels, voice transparency, long-press/pinch/swipe gestures, and low-latency auto-apply |
+| HUAWEI FreeBuds Pro 4 | Basic support | Battery and ANC/off; no verified ANC state readback or gesture settings |
+| HUAWEI FreeBuds Pro 5 | Basic support | Battery, transparency/ANC/off, state readback, and low-latency auto-apply; ANC levels and gestures remain pending |
+| HUAWEI FreeBuds 7i | Extended support | Battery, transparency/ANC/off readback, four ANC levels, double/triple-tap, long-press and swipe-volume gestures, wear detection, head-motion control, spatial audio, four sound presets, a 10-band custom EQ, high-quality audio, low-latency auto-apply, dual-device list management, and official color images |
 | HUAWEI FreeClip | Basic support | Left/right/case battery; no traditional ANC |
-| HUAWEI FreeClip 2 | Extended support | Battery, gestures, spatial audio, and selected wearing/audio settings; no traditional ANC |
+| HUAWEI FreeClip 2 | Extended support | Battery, double/triple-tap and swipe gestures, spatial audio, low-latency auto-apply, and selected wearing/audio settings; no traditional ANC |
+| HUAWEI FreeArc | Extended support | Left/right/case battery, double/triple-tap, press-and-hold and swipe gestures, five official sound presets, a 10-band custom EQ, and official color images; no traditional ANC |
 | HUAWEI Eyewear (1st generation) | Basic support | Left/right temple battery and system UI integration; no ANC |
-| HUAWEI Eyewear 2 | Basic support | Left/right temple battery and gesture settings; no ANC |
+| HUAWEI Eyewear 2 | Basic support | Left/right temple battery, double-tap/swipe gestures, and low-latency auto-apply; no ANC |
 
 Models marked Basic or Extended still benefit from real-device regression testing. Official features not listed in the table should not be assumed to work.
 
